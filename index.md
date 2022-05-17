@@ -1,37 +1,39 @@
-## Welcome to GitHub Pages
-
-You can use the [editor on GitHub](https://github.com/caiolongo/Pomodoro/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/caiolongo/Pomodoro/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <audio id="audio">
+        <source src="alarm.mp3" type="audio/mpeg">
+      </audio>
+    <title>Pomodoro</title>
+</head>
+<body style="background-color: powderblue;">
+    <div class="numeros">
+        <span id="numberMinuteLeft">0</span>
+        <span id="numberMinuteRight">0</span>
+        <span>:</span>
+        <span id="numberSecondLeft">0</span>
+        <span id="numberSecondRight">0</span>
+    </div>
+    <div class="botoes">
+        <button id="buttonStartStudy" type="button" class="btn btn-light" onclick="startPomodoroStudy()">START Study</button>
+        <button id="buttonStartRest" type="button" class="btn btn-light" onclick="startPomodoroRest()">START Rest</button>
+    </div>
+    <div class="botoes">
+        <button id="buttonStartStudy" type="button" class="btn btn-light" onclick="document.location.reload(true)">RESET</button>
+    </div>
+    <div>
+        <p class="texto">
+            O método pomodoro consiste em dividir seu tempo em 25 minutos de concentração intensa e em seguida 5 minutos de descanso. O método deve ser utilizado até que você acabe
+            os seus objetivos.
+        </p>
+        <p class="texto"> Feito por Caio Longo.</p>
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>
